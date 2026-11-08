@@ -26,8 +26,105 @@ namespace Calculator_and_Unit_Converter
 
                 if (choice == "1")
                 {
+                    Console.WriteLine();
+                    Console.WriteLine("Select a choice");
+                    Console.WriteLine("1. Add");
+                    Console.WriteLine("2. Substract");
+                    Console.WriteLine("3. Multiply");
+                    Console.WriteLine("3. Divide");
+                    Console.Write("Choose: ");
+                    choice = Console.ReadLine();
+                    if (choice == "1")
+                    {
+                        Console.WriteLine("Enter your first value");
+                        if (double.TryParse(Console.ReadLine(), out double value1))
+                        {
+                            Console.WriteLine("Enter your second value");
+                            if (double.TryParse(Console.ReadLine(), out double value2))
+                            {
+                                Console.WriteLine("The Total is: ");
+                                Console.Write(value1 + value2);
+                            }
+                            else
+                            {
+                                Console.WriteLine("Enter a valid number input.");
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("Enter a valid number input.");
+                        }
+                    }
+                    else if (choice == "2")
+                    {
+                        Console.WriteLine("Enter your first value");
+                        if (double.TryParse(Console.ReadLine(), out double value1))
+                        {
+                            Console.WriteLine("Enter your second value");
+                            if (double.TryParse(Console.ReadLine(), out double value2))
+                            {
+                                Console.WriteLine("The Difference is: ");
+                                Console.Write(value1 - value2);
+                            }
+                            else
+                            {
+                                Console.WriteLine("Enter a valid number input.");
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("Enter a valid number input.");
+                        }
+                    }
+                    else if (choice == "3")
+                    {
+                        Console.WriteLine("Enter your first value");
+                        if (double.TryParse(Console.ReadLine(), out double value1))
+                        {
+                            Console.WriteLine("Enter your second value");
+                            if (double.TryParse(Console.ReadLine(), out double value2))
+                            {
+                                Console.WriteLine("The Total is: ");
+                                Console.Write(value1 * value2);
+                            }
+                            else
+                            {
+                                Console.WriteLine("Enter a valid number input.");
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("Enter a valid number input.");
+                        }
+                    }
+                    else if (choice == "4")
+                    {
+                        Console.WriteLine("Enter your first value");
+                        if (double.TryParse(Console.ReadLine(), out double value1))
+                        {
+                            Console.WriteLine("Enter your second value");
+                            if (double.TryParse(Console.ReadLine(), out double value2))
+                            {
+                                Console.WriteLine("The Total is: ");
+                                Console.Write(value1 / value2);
+                            }
+                            else
+                            {
+                                Console.WriteLine("Enter a valid number input.");
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("Enter a valid number input.");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Enter a valid choice.");
+                    }
 
-                }else if(choice == "2")
+                }
+                else if(choice == "2")
                 {
                     Console.WriteLine();
                     Console.WriteLine("Select a choice");
@@ -39,8 +136,7 @@ namespace Calculator_and_Unit_Converter
                     if (choice == "1")
                     {
                         Console.WriteLine("Enter your value in Kilometres");
-
-                        //double value;
+                        
                         if (double.TryParse(Console.ReadLine(), out double value))
                         {
                             value *= 0.6214;
