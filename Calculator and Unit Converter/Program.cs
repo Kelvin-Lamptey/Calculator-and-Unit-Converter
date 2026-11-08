@@ -26,7 +26,12 @@ namespace Calculator_and_Unit_Converter
 
                 }else if(choice == "2")
                 {
-                   
+                    Console.WriteLine("Select a choice");
+                    Console.WriteLine("1. Kilometres to Miles");
+                    Console.WriteLine("2. Celsius and Fahrenheit");
+                    Console.WriteLine("3. GHS to USD");
+                    choice = Console.ReadLine();
+                    
                 }
                 else
                 {
