@@ -2,7 +2,7 @@
 
 ## How to run the app
  - Open the repo in Ms Visual Studio
- - Press `CTRL` + `F5` or Hit the start button at the top navigation bar to run the app \
+ - Press `CTRL` + `F5` or Hit the start button at the top navigation bar to run the app <br>
 
 ## How to operate the app
  - Run the app from the first step
